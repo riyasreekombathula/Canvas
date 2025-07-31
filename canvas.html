@@ -1,0 +1,18 @@
+<canvas id="myCanvas" width="200" height="200" style="background-color: black;"></canvas>
+
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+
+  // Full white moon
+  ctx.beginPath();
+  ctx.arc(100, 100, 60, 0, Math.PI * 2);
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+  // Overlapping black circle to create crescent effect
+  ctx.beginPath();
+  ctx.arc(120, 100, 60, 0, Math.PI * 2);
+  ctx.fillStyle = "black";
+  ctx.fill();
+</script>
